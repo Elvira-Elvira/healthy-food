@@ -188,7 +188,7 @@ p {
     position: absolute;
     width: 70px;
     height: 70px;
-    background-color: rgba(141, 175, 25, 1);
+    background-color: rgb(43, 25, 175);
     z-index: 1;
     margin-top: -86px;
     margin-left: 283px;
