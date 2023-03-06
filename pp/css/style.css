@@ -76,7 +76,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    height: 90%;
+    height: 100vh;
 }
 
 .maininfo {
@@ -88,7 +88,7 @@ body {
 .maininfo h1 {
     text-align: justify;
     font-size: 55px;
-    font-family: "MuseoSansCyrl500";
+    font-family: "MuseoSansCyrl300";
     line-height: 66px;
 }
 
@@ -96,6 +96,23 @@ p {
     font-family: 'MuseoSansCyrl300';
     font-size: 18px;
     line-height: 140%;
+}
+
+.mainButtonChose {
+    position: relative;
+    height: 69px;
+    width: 260px;
+    background-color: rgba(141, 175, 25, 1);
+}
+
+.mainButtonChose a {
+    position: absolute;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-family: "MuseoSansCyrl300";
+    margin-left: 59px;
+    margin-top: 23px;
 }
 
 .mainimg {
@@ -188,7 +205,7 @@ p {
     position: absolute;
     width: 70px;
     height: 70px;
-    background-color: rgb(43, 25, 175);
+    background-color: rgba(141, 175, 25, 1);
     z-index: 1;
     margin-top: -86px;
     margin-left: 283px;
@@ -200,6 +217,26 @@ p {
     height: 20px;
     margin-top: 25px;
     margin-left: 23px;
+}
+
+.thirdscreen {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 110px;
+}
+
+.lastinfo {
+    width: 30%;
+}
+
+.orderform {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.lastimg {
+    width: 30%;
 }
 
 .footer {
