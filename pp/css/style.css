@@ -29,7 +29,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0;
+    width: 100vw;
+    outline: none;
+    overflow-x: hidden;
+    margin: -10px;
 }
 
 .header{
@@ -43,7 +46,7 @@ body {
 .header p {
     font-family: 'MuseoSansCyrl300';
     font-size: 14px;
-    margin-top: 34px;
+    margin-top: 30px;
 }
 
 .logo {
@@ -61,10 +64,10 @@ body {
 }
 
 .basket {
-    margin-left: 8.33%;
-    margin-right: 8.33%;
-    margin-top: 8.33%;
-    margin-bottom: 8.33%;
+    height: 25px;
+    width: 25px;
+    margin-top: 28px;
+    margin-right: 20px;
 }
 
 .container {
@@ -86,6 +89,7 @@ body {
 }
 
 .maininfo h1 {
+    width: 510px;
     text-align: justify;
     font-size: 55px;
     font-family: "MuseoSansCyrl300";
@@ -135,12 +139,16 @@ p {
 
 .secondscreen {
     background-color: rgba(241, 244, 230, 1);
-    height: 100vh;
+    height: 105vh;
     margin-top: -100px;
 }
 
-.secondscreen p{
-    display: inline-block;
+.secondtitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondtitle p{
     margin-top: 80px;
     margin-left: 140px;
     font-family: "MuseoSansCyrl500";
@@ -148,9 +156,8 @@ p {
 }
 
 .navigationarrows {
-    display: inline;
+    margin-top: 100px;
     color: rgba(105, 105, 105, 1);
-    margin-left: 800px;
 }
 
 .navigationarrows img {
@@ -158,9 +165,13 @@ p {
     height: 15px;
 }
 
+.navigationarrows img:last-child {
+margin-right: 140px;
+}
+
 .dietTypes {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 30px;
     margin-bottom: 125px;
 }
@@ -168,7 +179,7 @@ p {
 .type {
     position: relative;
     width: 384px;
-    height: 484px;
+    height: 520px;
     background-color: white;
 }
 
@@ -181,6 +192,8 @@ p {
 }
 
 .type img {
+    height: 324px;
+    width: 324px;
     margin-left: 30px;
     margin-top: 30px;
 }
@@ -223,10 +236,25 @@ p {
     display: flex;
     justify-content: space-evenly;
     margin-top: 110px;
+    height: 540px;
 }
 
 .lastinfo {
     width: 30%;
+    text-align: justify;
+    margin-left: 120px;
+}
+
+.lastinfo p:first-child{
+    width: 282px;
+    font-size: 40px;
+    font-family: "MuseoSansCyrl500";
+}
+
+.lastinfo p:last-child{
+    width: 319px;
+    font-size: 18px;
+    font-family: "MuseoSansCyrl300";
 }
 
 .orderform {
@@ -235,18 +263,122 @@ p {
     width: 30%;
 }
 
+.orderform input{
+    width: 320px;
+    height: 69px;
+    margin-top: 15px;
+}
+
+.orderform .mainButtonChose{
+    margin-top: 15px;
+    color: white;
+    font-family: "MuseoSansCyrl300";
+    font-size: 18px;
+}
+
+.mainButtonChose p{
+    margin-left: 63px;
+    margin-top: 20px;
+}
+
 .lastimg {
     width: 30%;
+    margin-right: 120px;
 }
 
 .footer {
-    position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 135px;
-    left: 0px;
-    top: 2069px;
-
-    /* Фон */
-
+    margin-bottom: -10px;
     background: #F1F4E6;
+}
+
+@media screen and (max-width: 800px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-width: 100vw;
+        margin-left: -10px;
+    }
+
+    .firstscreen{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+    }
+
+    .maininfo{
+        width: 345px;
+        text-align: justify;
+        margin-top: 60px;
+    }
+
+    .maininfo h1{
+        width: 345px;
+        font-size: 38px;
+        line-height: 45px;
+    }
+
+    .maininfo p{
+        font-size: 18px;
+        margin-top: 25px;
+    }
+
+    .mainButtonChose{
+        margin-top: 40px;
+        width: 354px;
+    }
+
+    .mainButtonChose a{
+        margin-left: 110px;
+    }
+
+    .mainimg{
+        width: 345px;
+    }
+
+    .secondscreen{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+        height: max-content;
+    }
+
+    .navigationarrows {
+        display: none;
+    }
+
+    .dietTypes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    .type {
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .thirdscreen{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+
+    .lastimg{
+        display: none;
+    }
+
+    .footer{
+        margin-top: 70px;
+    }
 }
