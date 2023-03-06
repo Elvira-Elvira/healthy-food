@@ -1,0 +1,215 @@
+@font-face { 
+    font-family: "MuseoSansCyrl300";
+    src: url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.eot");
+    src: url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face { 
+    font-family: "MuseoSansCyrl100";
+    src: url("../fonts/MuseoSansCyrl100/MuseoSansCyrl100.eot");
+    src: url("../fonts/MuseoSansCyrl100/MuseoSansCyrl100.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl100/MuseoSansCyrl100.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl100/MuseoSansCyrl100.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face { 
+    font-family: "MuseoSansCyrl500";
+    src: url("../fonts/MuseoSansCyrl500/MuseoSansCyrl500.eot");
+    src: url("../fonts/MuseoSansCyrl500/MuseoSansCyrl500.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl500/MuseoSansCyrl500.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl500/MuseoSansCyrl500.ttf") format("truetype");
+    font-weight: bolder;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    height: 50px;
+}
+
+.header p {
+    font-family: 'MuseoSansCyrl300';
+    font-size: 14px;
+    margin-top: 34px;
+}
+
+.logo {
+    width: 70px;
+    height: 25px;
+    margin-left: 120px;
+    margin-top: 31px;
+}
+
+.iconmenu {
+    width: 26px;
+    height: 16px;
+    margin-left: 22px;
+    margin-top: 36px;
+}
+
+.basket {
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+    margin-top: 8.33%;
+    margin-bottom: 8.33%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.firstscreen {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 90%;
+}
+
+.maininfo {
+    width: 50%;
+    margin-top: 159px;
+    margin-left: 120px;
+}
+
+.maininfo h1 {
+    text-align: justify;
+    font-size: 55px;
+    font-family: "MuseoSansCyrl500";
+    line-height: 66px;
+}
+
+p {
+    font-family: 'MuseoSansCyrl300';
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.mainimg {
+    width: 50%;
+    margin-top: 61px
+}
+
+.mainimg img{
+    position: relative;
+}
+
+/* .cutimg {
+    position: absolute;
+    width: 194px;
+    height: 431px;
+    background-color: white;
+    margin-left: 133px;
+    margin-top: 0;
+} */
+
+.secondscreen {
+    background-color: rgba(241, 244, 230, 1);
+    height: 100vh;
+    margin-top: -100px;
+}
+
+.secondscreen p{
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 140px;
+    font-family: "MuseoSansCyrl500";
+    font-size: 40px;
+}
+
+.navigationarrows {
+    display: inline;
+    color: rgba(105, 105, 105, 1);
+    margin-left: 800px;
+}
+
+.navigationarrows img {
+    width: 30px;
+    height: 15px;
+}
+
+.dietTypes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 125px;
+}
+
+.type {
+    position: relative;
+    width: 384px;
+    height: 484px;
+    background-color: white;
+}
+
+.type:first-child {
+    margin-left: 120px;
+}
+
+.type:last-child {
+    margin-right: 120px;
+}
+
+.type img {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.programname {
+    display: block !important;
+    margin-top: 36px !important;
+    margin-left: 30px !important;
+    font-family: "MuseoSansCyrl500" !important;
+    font-size: 22px !important;
+}
+
+.programccal {
+    margin-left: 30px !important;
+    margin-top: 15px !important;
+    font-family: "MuseoSansCyrl300" !important;
+    font-size: 14px !important;
+    line-height: 16.8px !important;
+}
+
+.choseButton {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(43, 25, 175);
+    z-index: 1;
+    margin-top: -86px;
+    margin-left: 283px;
+}
+
+.choseButton img {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    margin-top: 25px;
+    margin-left: 23px;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 135px;
+    left: 0px;
+    top: 2069px;
+
+    /* Фон */
+
+    background: #F1F4E6;
+}
