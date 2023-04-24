@@ -36,20 +36,13 @@ body {
 }
 
 .header{
-    display: flex;
-    flex-direction: row;
+    /* display: inline-block !important; */
     position: relative;
-    justify-content: space-around;
     height: 50px;
 }
 
-.header p {
-    font-family: 'MuseoSansCyrl300';
-    font-size: 14px;
-    margin-top: 30px;
-}
-
 .logo {
+    position: absolute;
     width: 70px;
     height: 25px;
     margin-left: 120px;
@@ -57,17 +50,59 @@ body {
 }
 
 .iconmenu {
+    position: absolute;
     width: 26px;
     height: 16px;
-    margin-left: 22px;
+    margin-left: 222px;
     margin-top: 36px;
 }
 
-.basket {
+.header p {
+    position: absolute;
+    font-family: 'MuseoSansCyrl300';
+    font-size: 14px;
+    margin-top: 38px;
+    margin-left: 263px;
+}
+
+#order{
+    position: absolute;
+    cursor: pointer;
+    margin-top: 38px;
+    margin-left: 830px;
+    font-family: 'MuseoSansCyrl300';
+    font-size: 14px;
+}
+
+#aboutUs{
+    position: absolute;
+    margin-top: 38px;
+    margin-left: 920px;
+    font-family: 'MuseoSansCyrl300';
+    font-size: 14px;
+}
+
+#contacts{
+    position: absolute;
+    margin-top: 38px;
+    margin-left: 990px;
+    font-family: 'MuseoSansCyrl300';
+    font-size: 14px;
+}
+
+.imgBasket {
+    position: absolute;
+    position: relative;
     height: 25px;
     width: 25px;
     margin-top: 28px;
-    margin-right: 20px;
+    margin-left: 1370px;
+}
+
+.basket p{
+    position: absolute;
+    margin-top: -18px;
+    margin-left: 1400px;
 }
 
 .container {
@@ -128,14 +163,14 @@ p {
     position: relative;
 }
 
-/* .cutimg {
+#whiteSquare {
     position: absolute;
     width: 194px;
     height: 431px;
     background-color: white;
     margin-left: 133px;
-    margin-top: 0;
-} */
+    margin-top: -431px;
+}
 
 .secondscreen {
     background-color: rgba(241, 244, 230, 1);

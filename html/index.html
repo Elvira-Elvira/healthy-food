@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Доставка здорового питания</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="../js/index.js"></script>
@@ -12,11 +12,13 @@
         <img class="logo" src="../img/logo.svg" alt="logo">
         <img class="iconmenu" src="../img/iconmenu.svg" alt="iconmenu">
         <p>Меню рационов</p>
-        <p>Заказать</p>
-        <p>О нас</p>
-        <p>Контакты</p>
-        <img class="basket" src="../img/basket.svg" alt="basket">
+        <p id="order">Заказать</p>
+        <p id="aboutUs">О нас</p>
+        <p id="contacts">Контакты</p>
+        <div class="basket">
+        <img class="imgBasket" src="../img/basket.svg" alt="basket">
         <p>(0)</p>
+        </div>
     </div>
     <div class="container">
         <div class="firstscreen">
@@ -29,7 +31,7 @@
             </div>
             <div class="mainimg">
                 <img src="../img/imgmain.png" alt="mainImg">
-                <!-- <div class="cutimg"></div> -->
+                <div id="whiteSquare"></div>
             </div>
         </div>
         <div class="secondscreen"><a name="chosediet"></a>
