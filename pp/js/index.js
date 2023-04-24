@@ -1,14 +1,12 @@
-$(../html/index.html).ready(function(){
-    $(mainButtonChose).on("click", function () {
-        let href = $(this)("href");
+$(document).ready(function(){
+    
+    $(".mainButtonChose").click(function() { 
 
-        $("html, body").animate({
-            scrollTop: $(href).offset().top
-        }, {
-            duration: 370,
-            easing: "linear"
-        });
+        $('html, body').animate({
+        scrollTop: $(".secondscreen").offset().top 
+        }, 370); 
+        event.preventDefault();
+        event.stopPropagation();
+       });
 
-        return false;
-    });
 });
